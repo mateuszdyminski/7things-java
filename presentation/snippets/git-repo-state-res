@@ -1,0 +1,12 @@
+@Path("health")
+public class HealthResource {
+
+    @Inject
+    private GitRepositoryState gitRepositoryState;
+
+    @GET
+    @Produces("application/json")
+    public Response getHealth() {
+        return Response.ok().entity(new HealthStatus(gitRepositoryState)).build();
+    }
+}

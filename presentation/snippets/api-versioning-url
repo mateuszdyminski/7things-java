@@ -1,0 +1,18 @@
+@Path("/api")
+public class UsersResource {
+
+    @GET
+    @Path("/v{version}/users") // HL
+    @Produces("application/json")
+    public Response getUsers(@PathParam("version") String version) { // HL
+        if (version.equalsIgnoreCase("1")) {
+            return Response.ok()
+                .entity(Arrays.asList(new User("Jan", "Kowalski")))
+                .build();
+        } else {
+            return Response.ok()
+                .entity(Arrays.asList(new User("Jan", "Kowalski", "987654321")))
+                .build();
+        }
+    }
+}

@@ -1,0 +1,5 @@
+Librato.metric(registry, "logins").tag("uid", uid).meter().mark()
+Librato.metric(registry, "kafka-read-latencies").tag("broker", broker).histogram().update(latency)
+Librato.metric(registry, "temperature").source("celcius").tag("type", "celcius").gauge(() -> 42))
+Librato.metric(registry, "jobs-processed").source("ebs").meter().mark()
+Librato.metric(registry, "just-these-tags").tag('"foo", "bar").doNotInheritTags().timer.update(time)

@@ -1,0 +1,21 @@
+@Path("api/health")
+public class ExtendedHealthResource {
+
+    @Inject
+    private GitRepositoryState gitRepositoryState;
+
+    @Inject
+    private MongoDatabase mongoDatabase;
+
+    @Inject
+    private AppStatus appStatus;
+
+    @GET
+    @Produces("application/json")
+    public Response getHealth() {
+        Document serverStatus = mongoDatabase.runCommand(new Document("serverStatus", 1));
+        return Response.ok()
+            .entity(new ExtendedHealthStatus(gitRepositoryState, serverStatus, appStatus))
+            .build();
+    }
+}

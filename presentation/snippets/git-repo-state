@@ -1,0 +1,9 @@
+    private GitRepositoryState getGitRepositoryState() {
+        try {
+            Properties properties = new Properties();
+            properties.load(getClass().getClassLoader().getResourceAsStream("git.properties"));
+            return new GitRepositoryState(properties);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }

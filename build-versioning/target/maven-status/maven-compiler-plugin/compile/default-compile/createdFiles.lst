@@ -1,0 +1,8 @@
+com/things/versioning/resources/ExtendedHealthResource.class
+com/things/versioning/Starter.class
+com/things/versioning/resources/ExtendedHealthStatus.class
+com/things/versioning/resources/AppStatus.class
+com/things/versioning/resources/HealthResource.class
+com/things/versioning/resources/GitRepositoryState.class
+com/things/versioning/HealthBinder.class
+com/things/versioning/resources/HealthStatus.class

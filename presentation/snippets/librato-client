@@ -1,0 +1,4 @@
+MetricRegistry registry = environment.metrics();
+Librato.reporter(registry, "<Librato Email>", "<Librato API Token>")
+    .setSource("<Source Identifier (usually hostname)>")
+    .start(10, TimeUnit.SECONDS);

@@ -1,0 +1,16 @@
+    private AppStatus getAppStatus() {
+        String hostname = "Unknown";
+
+        try
+        {
+            InetAddress addr;
+            addr = InetAddress.getLocalHost();
+            hostname = addr.getHostName();
+        }
+        catch (UnknownHostException ex)
+        {
+            throw new RuntimeException(ex);
+        }
+
+        return new AppStatus(hostname, LocalDateTime.now());
+    }
