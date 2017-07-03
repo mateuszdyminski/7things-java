@@ -1,39 +1,28 @@
+# Short description
 
+Projekt nad którym pracowałeś powoli dobiega końca. Nadchodzi czas release'u. Czy napewno o wszystkim pamiętałeś?
+Prezentacja zawiera 7 najważniejszych rzeczy, o których należy pamiętać zanim będzie za późno: wersjonowanie, profilowanie, health check'i, logi, performance, monitoring oraz deployment.
 
+# Description
 
+Projekt nad którym pracowałeś powoli dobiega końca. Nadchodzi czas release'u. Czy napewno o wszystkim pamiętałeś?
 
-Run test of calculator:
+Prezentacja ma na celu przybliżenie 7 najważniejszych rzeczy przed release'em, o których należy pamiętać zanim będzie za późno. Tematy zawarte w prezentacji to między innymi: 
+
+- wersjonowanie - API, buildy, artefakty, baza danych czy serwowane pliki
+- profilowanie - czy na pewno Twoją aplikację będzie można profilować po wypuszczeniu ją na produkcje 
+- health check’i - jak sprawdzić czy aplikacja działa oraz wiele innych przydatnych rzeczy
+- logowanie - jak poprawnie logować i gdzie te logi zbierać
+- performance - czy nasza aplikacja przetrzyma natłok użytkowników
+- monitoring oraza alarmy - jak być pewnym, że nasza aplikacja żyje i ma się dobrze
+- deployment aplikacji na produkcje - jak to zrobić, żeby spać spokojnie w weekend po release’ie 
+
+# Presentation
+
 ```bash
-hey -n 100 -c 10 -H "Content-type: text/plain" "http://localhost:8080/calculator/add?val1=3&val2=7"
+go get golang.org/x/tools/cmd/present
+cd presentation && present
 ```
 
-Run grizzly server with ctx logging
-```bash
-java -jar target/log-context-1.0-SNAPSHOT-jar-with-dependencies.jar true
-```
+Open [http://localhost:3999](http://localhost:3999)
 
-Make sample request to calculator service
-```bash
-curl 'http://localhost:8080/calculator/add?val1=3&val2=7'
-```
-
-API versioning - headers
-```bash
-curl http://localhost:8180/users
-
-curl -H "Accept: application/vnd.usersapp-v1+json" http://localhost:8180/users
-
-curl -H "Accept: application/vnd.usersapp-v2+json" http://localhost:8180/users
-```
-
-API versioning - url
-```bash
-curl http://localhost:8180/api/v1/users
-
-curl http://localhost:8180/api/v2/users
-```
-
-Build versioning
-```bash
-curl -H http://localhost:8090/health
-```
