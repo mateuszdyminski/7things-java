@@ -414,23 +414,23 @@ Run
 
 Logs
 
-    [INFO] 22:39:16.019 98c3d2f1-815e216e0c63 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
-    [INFO] 22:39:16.019 aab9e772-f9abdf62a129 127.0.0.1 - Got val1: 3
-    [INFO] 22:39:16.019 aab9e772-f9abdf62a129 127.0.0.1 - Got val2: 7
-    [INFO] 22:39:16.020 aab9e772-f9abdf62a129 127.0.0.1 - Result: 10
-    [INFO] 22:39:16.019 a589072c-fa04f4fa2a3b 127.0.0.1 - Got val2: 7
-    [INFO] 22:39:16.020 a589072c-fa04f4fa2a3b 127.0.0.1 - Result: 10
-    [INFO] 22:39:16.020 aab9e772-f9abdf62a129 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
-    [INFO] 22:39:16.020 9568307d-9ace8480f489 127.0.0.1 - HTTP REQUEST: GET /calculator/add  Headers: {host=[localhost:8080], user-agent=[Go-http-client/1.1], content-type=[text/plain], accept-encoding=[gzip]}
-    [INFO] 22:39:16.021 9568307d-9ace8480f489 127.0.0.1 - Got val1: 3
-    [INFO] 22:39:16.022 9568307d-9ace8480f489 127.0.0.1 - Got val2: 7
-    [INFO] 22:39:16.022 9568307d-9ace8480f489 127.0.0.1 - Result: 10
-    [INFO] 22:39:16.022 9568307d-9ace8480f489 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
-    [INFO] 22:39:16.021 29a0e614-d536ec677462 127.0.0.1 - HTTP REQUEST: GET /calculator/add  Headers: {host=[localhost:8080], user-agent=[Go-http-client/1.1], content-type=[text/plain], accept-encoding=[gzip]}
-    [INFO] 22:39:16.022 a589072c-fa04f4fa2a3b 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
-    [INFO] 22:39:16.023 29a0e614-d536ec677462 127.0.0.1 - Got val1: 3
-    [INFO] 22:39:16.024 29a0e614-d536ec677462 127.0.0.1 - Got val2: 7
-    [INFO] 22:39:16.024 29a0e614-d536ec677462 127.0.0.1 - Result: 10
+    [I] 22:39:16.19 98c3d2f1-815e216e0c63 [grizzly-11] 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
+    [I] 22:39:16.19 aab9e772-f9abdf62a129 [grizzly-9] 127.0.0.1 - Got val1: 3
+    [I] 22:39:16.19 aab9e772-f9abdf62a129 [grizzly-9] 127.0.0.1 - Got val2: 7
+    [I] 22:39:16.20 aab9e772-f9abdf62a129 [grizzly-9] 127.0.0.1 - Result: 10
+    [I] 22:39:16.19 a589072c-fa04f4fa2a3b [grizzly-12] 127.0.0.1 - Got val2: 7
+    [I] 22:39:16.20 a589072c-fa04f4fa2a3b [grizzly-12] 127.0.0.1 - Result: 10
+    [I] 22:39:16.20 aab9e772-f9abdf62a129 [grizzly-9] 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
+    [I] 22:39:16.20 9568307d-9ace8480f489 [grizzly-14] 127.0.0.1 - HTTP REQUEST: GET /calculator/add  Headers: {host=[localhost:8080], user-agent=[Go-http-client/1.1], content-type=[text/plain], accept-encoding=[gzip]}
+    [I] 22:39:16.21 9568307d-9ace8480f489 [grizzly-14] 127.0.0.1 - Got val1: 3
+    [I] 22:39:16.22 9568307d-9ace8480f489 [grizzly-14] 127.0.0.1 - Got val2: 7
+    [I] 22:39:16.22 9568307d-9ace8480f489 [grizzly-14] 127.0.0.1 - Result: 10
+    [I] 22:39:16.22 9568307d-9ace8480f489 [grizzly-14] 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
+    [I] 22:39:16.21 29a0e614-d536ec677462 [grizzly-13] 127.0.0.1 - HTTP REQUEST: GET /calculator/add  Headers: {host=[localhost:8080], user-agent=[Go-http-client/1.1], content-type=[text/plain], accept-encoding=[gzip]}
+    [I] 22:39:16.22 a589072c-fa04f4fa2a3b [grizzly-12] 127.0.0.1 - HTTP RESPONSE: GET /calculator/add  Status: 200
+    [I] 22:39:16.23 29a0e614-d536ec677462 [grizzly-13] 127.0.0.1 - Got val1: 3
+    [I] 22:39:16.24 29a0e614-d536ec677462 [grizzly-13] 127.0.0.1 - Got val2: 7
+    [I] 22:39:16.24 29a0e614-d536ec677462 [grizzly-13] 127.0.0.1 - Result: 10
 
 * Log things in the frontend/mobile app
 

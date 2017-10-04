@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.things.logcontext.Starter</mainClass>
+                            <mainClass>com.things.Starter</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

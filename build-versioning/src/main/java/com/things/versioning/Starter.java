@@ -1,6 +1,7 @@
 package com.things.versioning;
 
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
+import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import java.io.IOException;
@@ -22,6 +23,8 @@ public class Starter {
         ResourceConfig resourceConfig = new ResourceConfig();
         resourceConfig.packages("com.things.versioning.resources");
         resourceConfig.register(new HealthBinder());
+        resourceConfig.register(JacksonFeature.class);
+
         return resourceConfig;
     }
 }

@@ -1,8 +1,8 @@
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/HealthBinder.java
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/ExtendedHealthResource.java
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/HealthResource.java
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/ExtendedHealthStatus.java
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/HealthStatus.java
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/Starter.java
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/AppStatus.java
-/home/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/GitRepositoryState.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/HealthResource.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/Starter.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/ExtendedHealthStatus.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/HealthStatus.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/AppStatus.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/GitRepositoryState.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/resources/ExtendedHealthResource.java
+/Users/md/workspace/7things-java/build-versioning/src/main/java/com/things/versioning/HealthBinder.java

@@ -1,6 +1,7 @@
 package com.things.versioning.api;
 
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
+import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import java.io.IOException;
@@ -21,6 +22,7 @@ public class Starter {
     public static ResourceConfig createResources() {
         ResourceConfig resourceConfig = new ResourceConfig();
         resourceConfig.packages("com.things.versioning.api.resources");
+        resourceConfig.register(JacksonFeature.class);
         return resourceConfig;
     }
 }
