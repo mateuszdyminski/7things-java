@@ -24,3 +24,9 @@ hs_err_pid*
 # Intellij
 .idea
 *.iml
+
+# Java
+target
+
+# MacOS
+.DS_Store

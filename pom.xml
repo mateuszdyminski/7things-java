@@ -18,7 +18,6 @@
         <module>build-versioning</module>
         <module>log-context</module>
         <module>api-versioning</module>
-        <module>logaggregator</module>
     </modules>
 
     <dependencies>
